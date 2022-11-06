@@ -10,8 +10,6 @@
 
 <body>
     <div class="uenohou">
-        <div class="mojiover">
-        </div>
         <img src="https://kagu.ridaisai.com/wp-content/uploads/2022/11/タイトル-写真.jpg" class="lgs">
     </div>
 
@@ -57,24 +55,10 @@
 
 </body>
 <style>
-    .mojiover {
-        position: absolute;
-        left: 50px;
-        bottom: 50px;
-        color: #ffffff;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 200px;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        opacity: 0.6;
-    }
-
-
-    .uenohou {
+    .uenohou img {
         width: 100%;
         height: auto;
         text-align: center;
-        position: relative;
     }
 
     .resizeimage {
@@ -167,19 +151,21 @@
         margin-top: 10px;
     }
 
-    @media(max-width: 768px) {
+    @media(mini-width: 768px) {
         .boximg1 img {
             float: left;
             width: 33%;
             height: auto;
         }
     }
+
+    @media(max-width: 768px) {
+        .boximg1 img {
+            float: left;
+            width: 50%;
+            height: auto;
+        }
+    }
 </style>
-
-/*何号館の見取り図
-何号館毎に作成
-子ページのデザイン*/
-
-
 
 </html>
